@@ -1,3 +1,32 @@
-p {
-  font-size: 30px;
+body {
+  background-color: #cccccc;
+}
+.header {
+  width: 400px;
+  position: absolute;
+  right: 240px;
+  top: 70px;
+}
+.rectangle {
+  position: absolute;
+  width: 500px;
+  right: 190px;
+  top: 48px;
+  opacity: 50%;
+}
+.logo {
+  width: 100px;
+  position: absolute;
+  right: 670px;
+  top: 140px;
+}
+.search {
+  width: 35px;
+  position: absolute;
+  right: 10px;
+}
+.hamburger {
+  width: 60px;
+  position: absolute;
+  left: 10px;
 }
