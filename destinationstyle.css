@@ -1,0 +1,30 @@
+.body {
+}
+.Container {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 10rem);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+  background-color: rgb(44, 44, 44);
+}
+.content {
+  grid-area: content;
+  background-color: rgb(44, 44, 44);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(44, 44, 44);
+}
