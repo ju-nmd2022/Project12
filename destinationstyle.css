@@ -1,10 +1,14 @@
 .body {
+  margin: 0px;
 }
 .Container {
   display: grid;
   grid-template-columns: 1fr 15fr 1fr;
-  grid-template-rows: 4rem 180rem 10rem;
-  grid-template-areas: ". content .";
+  grid-template-rows: 40px 180rem 10rem;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
 }
 /*@media only screen and (max-width: 1100px) {
   .Container {
@@ -15,7 +19,7 @@
 
       ". content ."
   }
-}*/
+}
 @media only screen and (max-width: 900px) {
   .Container {
     display: grid;
@@ -23,7 +27,7 @@
     grid-template-rows: 4rem 180rem 10rem;
     grid-template-areas: ". content .";
   }
-}
+}*/
 .bigimg {
   margin-top: 4rem;
   width: 100%;
@@ -44,82 +48,102 @@
 }
 .our {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
-  position: absolute;
-  left: 70px;
-  top: 12px;
+  margin-left: 12px;
+  margin-top: 13px;
 }
 .header {
-  position: absolute;
   grid-area: header;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
 }
+
 .search {
   width: 35px;
   position: absolute;
   right: 10px;
 }
 .hamburger {
-  width: 60px;
-  position: absolute;
-  left: 10px;
-  top: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
 }
-.kenyaimg {
-  width: 360px;
-  position: relative;
-}
+
 .blackkenya {
   opacity: 00%;
   position: absolute;
   margin-top: 100px;
+  height: 176px;
+  width: 300px;
 }
 .blackgreece {
   opacity: 0%;
   position: absolute;
   margin-top: 652px;
+  height: 176px;
+  width: 300px;
 }
 .blackengland {
   opacity: 00%;
   position: absolute;
   margin-top: 376px;
+  height: 176px;
+  width: 300px;
 }
 .blacknetherlands {
   opacity: 00%;
   position: absolute;
   margin-top: 929px;
+  height: 176px;
+  width: 300px;
 }
 .blackchile {
   opacity: 00%;
   position: absolute;
   margin-top: 1205px;
+  height: 176px;
+  width: 300px;
 }
 .blacksweden {
   opacity: 00%;
   position: absolute;
   margin-top: 1481px;
+  height: 176px;
+  width: 300px;
 }
 .blackaustria {
   opacity: 00%;
   position: absolute;
   margin-top: 1758px;
+  height: 176px;
+  width: 300px;
 }
 .blackitaly {
   opacity: 00%;
   position: absolute;
   margin-top: 2034px;
+  height: 176px;
+  width: 300px;
 }
 .blackspain {
   opacity: 00%;
   position: absolute;
   margin-top: 2310px;
+  height: 176px;
+  width: 300px;
 }
 .blackmexico {
   opacity: 00%;
   position: absolute;
   margin-top: 2586px;
+  height: 176px;
+  width: 300px;
 }
 
 .blackkenya:hover {
@@ -200,42 +224,55 @@
     opacity: 63%;
   }
 }
-
+.kenyaimg {
+  position: relative;
+  height: 176px;
+  width: 300px;
+}
 .englandimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .greeceimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .netherlandsimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .chileimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .swedenimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .austriaimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .italyimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .spainimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .mexicoimg {
   position: relative;
-  width: 360px;
+  height: 176px;
+  width: 300px;
 }
 .l1 {
   height: 176px;
@@ -350,7 +387,7 @@
   font-family: sans-serif;
   font-weight: lighter;
   padding-top: 85px;
-  padding-left: 380px;
+  padding-left: 330px;
   width: 300px;
 }
 .kenyainfo2 {
@@ -439,4 +476,7 @@
 .footer {
   grid-area: footer;
   background-color: rgb(172, 172, 172);
+}
+.contact {
+  margin-left: 10px;
 }
