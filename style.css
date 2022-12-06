@@ -1,4 +1,33 @@
 
+body{
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 40px 2fr 1fr 1.5fr;
+   grid-template-areas: 
+   "header header"
+   "photo otherphoto"
+   "photo thirdphoto"
+   "footer footer";
+}
+
+.kenya{
+  grid-area: photo;
+  height: 100vh;
+  width: 67vw;
+}
+
+.kayaking{
+  grid-area: otherphoto;
+  height: 67vh;
+  width: 33vw;
+}
+
+.netherlands{
+  grid-area: thirdphoto;
+  height: 33vh;
+  width: 33vw;
+}
+
 .header {
   width: 400px;
   position: absolute;
