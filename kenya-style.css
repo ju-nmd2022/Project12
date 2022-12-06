@@ -1,8 +1,13 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
 body {
   margin: 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 1fr 0.4fr;
   grid-template-areas:
     "header header header"
     ". content content"
@@ -68,6 +73,8 @@ li {
 
 .text {
   background-color: white;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 
 .heading {
@@ -83,13 +90,13 @@ p {
 }
 
 button {
-  grid-template-rows: 2/3;
-  position: absolute;
-  bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 8rem;
+  height: 3rem;
+  margin-top: 28rem;
+  margin-bottom: 2rem;
+  position: relative;
   background-color: black;
   color: white;
   margin-left: 2rem;
@@ -123,11 +130,15 @@ button {
   width: 100vw;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 651px) and (max-width: 900px) {
+  html {
+    font-size: 13px;
+  }
+
   body {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 0.5fr 1fr 0.4fr 0.4fr;
     grid-template-areas:
       "header header"
       "content content"
@@ -139,7 +150,6 @@ button {
   .text {
     grid-area: content;
     width: 100vw;
-    height: 50vh;
   }
 
   .photo {
@@ -149,12 +159,82 @@ button {
 
   .safariimg {
     grid-area: middlephotoone;
+    height: 50vh;
   }
   .othersafariimg {
     grid-area: middlephototwo;
+    height: 50vh;
   }
 
   .secondphoto {
     grid-area: bottomphoto;
+  }
+
+  button {
+    grid-column: 1/2;
+    margin-top: 20rem;
+  }
+
+  .logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    margin-top: 21rem;
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40px 1fr 0.7fr 0.7fr 0.4fr;
+    grid-template-areas:
+      "header header"
+      "content content"
+      "photo photo"
+      "middlephotoone middlephototwo"
+      "bottomphoto bottomphoto";
+  }
+
+  .text {
+    grid-area: content;
+    width: 100vw;
+  }
+
+  .photo {
+    width: 100vw;
+    grid-area: photo;
+    height: auto;
+  }
+
+  .safariimg {
+    grid-area: middlephotoone;
+    height: 50vh;
+  }
+  .othersafariimg {
+    grid-area: middlephototwo;
+    height: 50vh;
+  }
+
+  .secondphoto {
+    grid-area: bottomphoto;
+  }
+
+  button {
+    grid-column: 1/2;
+    margin-top: 20rem;
+  }
+
+  .logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    margin-top: 21rem;
+    margin-left: 8rem;
   }
 }
