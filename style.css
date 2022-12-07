@@ -10,6 +10,12 @@ body {
     "footer footer";
 }
 
+* {
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
 header {
   background-color: black;
   grid-area: header;
