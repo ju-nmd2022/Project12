@@ -12,20 +12,28 @@ body{
 
 .kenya{
   grid-area: photo;
-  height: 100vh;
+  height: 102vh;
   width: 67vw;
 }
 
 .kayaking{
   grid-area: otherphoto;
-  height: 67vh;
+  height: 68vh;
   width: 33vw;
 }
 
 .netherlands{
   grid-area: thirdphoto;
-  height: 33vh;
+  height: 34vh;
   width: 33vw;
+}
+
+.globes{
+  background-color: dimgray;
+  grid-area: footer;
+  height: 50vh;
+  width: 100vw;
+
 }
 
 .header {
