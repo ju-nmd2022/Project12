@@ -114,3 +114,20 @@ li {
   position: absolute;
   left: 10px;
 }
+
+.logo,
+.header {
+  animation: slide-in 2000ms;
+  animation-delay: 500ms;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
