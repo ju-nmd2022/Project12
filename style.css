@@ -1,39 +1,88 @@
-
-body{
-   display: grid;
-   grid-template-columns: 2fr 1fr;
-   grid-template-rows: 40px 2fr 1fr 1.5fr;
-   grid-template-areas: 
-   "header header"
-   "photo otherphoto"
-   "photo thirdphoto"
-   "footer footer";
+body {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 40px 2fr 1fr 1.5fr;
+  grid-template-areas:
+    "header header"
+    "photo otherphoto"
+    "photo thirdphoto"
+    "footer footer";
 }
 
-.kenya{
+header {
+  background-color: black;
+  grid-area: header;
+  width: 100vw;
+}
+
+.loop {
+  grid-area: header;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  right: 1rem;
+}
+
+.menu-size {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  margin-left: 1rem;
+}
+
+.menu-list {
+  display: none;
+  position: absolute;
+  width: 33vw;
+  height: 100vh;
+  background-color: rgba(00, 00, 00, 0.9);
+  color: white;
+  padding: 0.5rem;
+  left: 0px;
+  line-height: 30pt;
+  top: 24px;
+  z-index: 1;
+}
+
+li {
+  margin-left: 2.5rem;
+}
+
+#menu-toggle:checked ~ .menu-list {
+  display: block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.kenya {
   grid-area: photo;
   height: 102vh;
   width: 67vw;
 }
 
-.kayaking{
+.kayaking {
   grid-area: otherphoto;
   height: 68vh;
   width: 33vw;
 }
 
-.netherlands{
+.netherlands {
   grid-area: thirdphoto;
   height: 34vh;
   width: 33vw;
 }
 
-.globes{
+.globes {
   background-color: dimgray;
   grid-area: footer;
   height: 50vh;
   width: 100vw;
-
 }
 
 .header {

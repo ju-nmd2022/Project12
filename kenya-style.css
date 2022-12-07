@@ -238,3 +238,19 @@ button {
     margin-left: 8rem;
   }
 }
+
+/*.text {
+  animation: slide-in 2000ms;
+  animation-delay: 500ms;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}*/
