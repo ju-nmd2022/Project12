@@ -93,14 +93,16 @@ li {
 .header {
   width: 400px;
   position: absolute;
-  right: 240px;
-  top: 70px;
+  right: 250px;
+  top: 150px;
 }
 .rectangle {
   position: absolute;
-  width: 500px;
-  right: 190px;
-  top: 48px;
+  background-color: rgb(255, 255, 255);
+  width: 550px;
+  height: 120px;
+  right: 235px;
+  top: 130px;
   opacity: 50%;
 }
 .logo {
@@ -121,7 +123,7 @@ li {
 }
 
 .logo,
-.header {
+.header{
   animation: slide-in 2000ms;
   animation-delay: 500ms;
 }
@@ -134,5 +136,21 @@ li {
   to {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+.rectangle {
+  animation: slide-in 2000ms;
+  animation-delay: 500ms;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 0.5;
   }
 }
