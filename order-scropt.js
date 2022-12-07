@@ -4,6 +4,7 @@ let myCard = document.getElementById("cardinfo");
 let myVisa = document.getElementById("visa");
 let myMastCard = document.getElementById("mastc");
 let myInfo = document.getElementById("card");
+let myContinueButton = document.getElementById("continue");
 
 myButton.addEventListener("click", myFunction);
 function myFunction() {
