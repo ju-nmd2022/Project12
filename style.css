@@ -264,7 +264,8 @@ li {
   }
 
   .question {
-    font-size: 16px;
+    font-size: 20px;
+    margin-top: 3%;
   }
 
   .africa,
@@ -272,17 +273,24 @@ li {
   .europe,
   .south-america,
   .north-america {
-    width: 80px;
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 60%;
   }
 
-  .africa {
-    margin-left: 30px;
+  .africa{
+    margin-left: 20%;
   }
 
+
+  .globes{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  }
   .globes-names {
-    margin-left: 40px;
-    margin-top: 140px;
-    font-size: 16px;
+    margin-left: 7%;
+    margin-top: 30%;
+    font-size: 20px;
   }
 
   .globes-background {
