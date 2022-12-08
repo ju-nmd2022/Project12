@@ -4,9 +4,46 @@ body {
 header {
   background-color: black;
   grid-area: header;
-  width: 100vw;
+  width: 100%;
 }
-
+.bigimg {
+  width: 100%;
+}
+.logo {
+  position: absolute;
+  width: 40px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.logofooter {
+  position: relative;
+  width: 30px;
+  margin-bottom: 10px;
+}
+.discover {
+  position: absolute;
+  margin-top: 30vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
+  letter-spacing: 6px;
+}
+.discoverdiv {
+  display: flex;
+  justify-content: center;
+}
+/*.discover {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  margin-left: 27.5vw;
+  margin-top: 30vh;
+  text-shadow: 1px 1px 10px #000;
+}*/
 .loop {
   grid-area: header;
   position: absolute;
@@ -16,7 +53,15 @@ header {
   margin-bottom: 0.3rem;
   right: 1rem;
 }
-
+.headertext {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  position: absolute;
+  font-size: 14px;
+  left: 55px;
+  top: 1px;
+  font-weight: lighter;
+}
 .menu-size {
   width: 1.5rem;
   height: 1.5rem;
@@ -59,18 +104,12 @@ li {
     ". content ."
     "footer footer footer";
 }
-.bigimg {
-  margin-top: 4rem;
-  width: 100%;
-}
-.kenya {
-  position: absolute;
-}
+
 .kenyatext {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   height: 13px;
-  padding-top: 10px;
+  color: #000;
 }
 .africa {
   font-size: 17px;
@@ -105,7 +144,13 @@ li {
   margin-bottom: 0.3rem;
   margin-left: 1rem;
 }
-
+.blackboxlink {
+  position: absolute;
+  width: 80px;
+  height: 45px;
+  margin-top: 40px;
+  opacity: 0%;
+}
 .blackkenya {
   opacity: 00%;
   position: absolute;
@@ -506,10 +551,50 @@ li {
 
 .footer {
   grid-area: footer;
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(207, 207, 207);
 }
 .contact {
   margin-left: 10px;
+}
+@media only screen and (max-width: 1700px) {
+  .discover {
+    margin-top: 27vh;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .discover {
+    margin-top: 25vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .discover {
+    margin-top: 23vh;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .discover {
+    margin-top: 20vh;
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .discover {
+    margin-top: 15vh;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .discover {
+    margin-top: 10vh;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .discover {
+    margin-top: 9vh;
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 1145px) {
   .kenyainfo2 {
@@ -537,6 +622,13 @@ li {
   }
   .kenyainfo2 {
     font-size: 12px;
+  }
+  .blackboxlink {
+    position: absolute;
+    width: 60px;
+    height: 45px;
+    margin-top: 47px;
+    opacity: 0%;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -697,14 +789,12 @@ li {
   .kenyatext {
   }
   .kenyainfo {
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 100px;
     font-family: sans-serif;
     font-weight: lighter;
-    padding-top: 90px;
-    margin-right: 13vw;
+    justify-content: center;
     width: 200px;
     font-size: 10px;
   }
@@ -724,9 +814,8 @@ li {
     position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 157px;
-    padding-top: 100px;
-    left: 6vw;
   }
   .kenyaimg {
     width: 200px;
@@ -781,8 +870,8 @@ li {
     opacity: 00%;
     position: absolute;
     margin-top: 100px;
-    height: 126px;
-    width: 200px;
+    height: 118px;
+    width: 201px;
   }
   .blackgreece {
     opacity: 0%;
