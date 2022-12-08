@@ -4,10 +4,13 @@ let myCard = document.getElementById("cardinfo");
 let myVisa = document.getElementById("visa");
 let myMastCard = document.getElementById("mastc");
 let myInfo = document.getElementById("card");
+let myContinueButton = document.getElementById("continue");
+let myArrow = document.getElementById("arrow");
 
 myButton.addEventListener("click", myFunction);
 function myFunction() {
   myPayment.style.display = "block";
+  myArrow.style.display = "block";
   sessionStorage.setItem("paymentVisible", true);
 }
 
@@ -25,6 +28,7 @@ myVisa.addEventListener("click", myOtherFunction);
 function myOtherFunction() {
   myCard.style.display = "block";
   sessionStorage.setItem("cardVisible", true);
+  myArrow.style.display = "none";
 }
 
 const isCard = sessionStorage.getItem("cardVisible");
@@ -41,6 +45,7 @@ myMastCard.addEventListener("click", myOtherFunctionAgain);
 function myOtherFunctionAgain() {
   myCard.style.display = "block";
   sessionStorage.setItem("cardIsVisible", true);
+  myArrow.style.display = "none";
 }
 
 const isTheCard = sessionStorage.getItem("cardIsVisible");
@@ -57,6 +62,7 @@ myInfo.addEventListener("click", myOtherFunctionLast);
 function myOtherFunctionLast() {
   myCard.style.display = "block";
   sessionStorage.setItem("cardIsVisibleAgain", true);
+  myArrow.style.display = "none";
 }
 
 const isMyCard = sessionStorage.getItem("cardIsVisibleAgain");

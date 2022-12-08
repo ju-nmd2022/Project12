@@ -2,12 +2,16 @@ body {
   margin: 0px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 40px 2fr 1fr 1.5fr;
+  grid-template-rows: 40px 2fr 1fr 200px;
   grid-template-areas:
     "header header"
     "photo otherphoto"
     "photo thirdphoto"
     "footer footer";
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
@@ -62,23 +66,23 @@ li {
 
 .kenya {
   grid-area: photo;
-  height: 102vh;
+  height: 100.5vh;
   width: 67vw;
 }
 
 .kayaking {
   grid-area: otherphoto;
-  height: 68vh;
+  height: 67vh;
   width: 33vw;
 }
 
 .netherlands {
   grid-area: thirdphoto;
-  height: 34vh;
+  height: 33.5vh;
   width: 33vw;
 }
 
-.globes {
+.globes-background {
   background-color: dimgray;
   grid-area: footer;
   height: 50vh;
@@ -86,18 +90,15 @@ li {
 }
 
 .header {
+  background-color: rgba(255, 255, 255, 0.5);
   width: 400px;
   position: absolute;
-  right: 240px;
-  top: 70px;
+  right: 250px;
+  top: 150px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.rectangle {
-  position: absolute;
-  width: 500px;
-  right: 190px;
-  top: 48px;
-  opacity: 50%;
-}
+
 .logo {
   width: 100px;
   position: absolute;
@@ -115,6 +116,54 @@ li {
   left: 10px;
 }
 
+.question {
+  grid-area: footer;
+  margin-left: 1.5rem;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.africa {
+  width: 200px;
+  margin-left: 25px;
+  margin-top: 70px;
+}
+.asia {
+  width: 200px;
+  margin-top: 70px;
+}
+
+.europe {
+  width: 200px;
+  margin-top: 70px;
+}
+.south-america {
+  width: 200px;
+  margin-top: 70px;
+}
+
+.north-america {
+  width: 200px;
+  margin-top: 70px;
+}
+
+.globes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 0%;
+  grid-area: footer;
+}
+
+.globes-names {
+  display: grid;
+  margin-left: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-area: footer;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin-top: 260px;
+}
+
 .logo,
 .header {
   animation: slide-in 2000ms;
@@ -129,5 +178,114 @@ li {
   to {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .logo {
+    left: 260px;
+  }
+
+  .header {
+    left: 370px;
+  }
+
+  .africa,
+  .asia,
+  .europe,
+  .south-america,
+  .north-america {
+    width: 120px;
+    margin-left: 30px;
+    margin-top: 70px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .globes-names {
+    margin-left: 60px;
+    font-size: 20px;
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 2fr 1fr 0.5fr;
+    grid-template-areas:
+      "header header"
+      "photo photo"
+      "thirdphoto otherphoto"
+      "footer footer";
+  }
+
+  .kenya {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .kayaking {
+    grid-area: otherphoto;
+    height: 50vh;
+    width: 66vw;
+  }
+
+  .netherlands {
+    grid-area: thirdphoto;
+    height: 50vh;
+    width: 34vw;
+  }
+
+  .logo {
+    width: 50px;
+    position: absolute;
+    right: 310px;
+    top: 60px;
+  }
+
+  .header {
+    right: 235px;
+    width: 200px;
+    position: absolute;
+    right: 90px;
+    top: 65px;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  .africa,
+  .asia,
+  .europe,
+  .south-america,
+  .north-america {
+    width: 80px;
+  }
+
+  .africa {
+    margin-left: 30px;
+  }
+
+  .globes-names {
+    margin-left: 40px;
+    margin-top: 140px;
+    font-size: 16px;
+  }
+
+  .globes-background {
+    height: 30vh;
   }
 }
