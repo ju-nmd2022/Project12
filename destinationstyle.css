@@ -638,7 +638,7 @@ li {
 
 .footer {
   grid-area: footer;
-  background-color: rgb(207, 207, 207);
+  background-color: rgba(207, 207, 207);
 }
 .contact {
   margin-left: 10px;
