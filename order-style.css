@@ -263,6 +263,10 @@ body {
     display: none;
   }
 
+  .payment {
+    height: 35vh;
+  }
+
   .cardinfo {
     grid-row: 6/7;
   }
