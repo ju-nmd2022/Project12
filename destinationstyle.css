@@ -77,7 +77,7 @@ header {
 }
 
 .arrow {
-  position: fixed;
+  position: relative;
   bottom: 50px;
   left: 50%;
   margin-left: -20px;
