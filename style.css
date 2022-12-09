@@ -85,7 +85,7 @@ li {
 .globes-background {
   background-color: dimgray;
   grid-area: footer;
-  height: 50vh;
+  height: 45vh;
   width: 100vw;
 }
 
@@ -123,45 +123,31 @@ li {
   color: rgb(255, 255, 255);
 }
 
-.africa {
-  width: 200px;
-  margin-left: 25px;
-  margin-top: 70px;
-}
-.asia {
-  width: 200px;
-  margin-top: 70px;
-}
-
-.europe {
-  width: 200px;
-  margin-top: 70px;
-}
-.south-america {
-  width: 200px;
-  margin-top: 70px;
-}
-
+.africa,
+.europe,
+.asia,
+.south-america,
 .north-america {
-  width: 200px;
-  margin-top: 70px;
+  width: 170px;
+  height: 170px;
 }
+
 
 .globes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin-left: 0%;
+  display: flex;
+  justify-content: space-around;
   grid-area: footer;
+  margin-top: 7%;
 }
 
 .globes-names {
-  display: grid;
-  margin-left: 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
   grid-area: footer;
+  margin-top: 25%;
   color: rgb(255, 255, 255);
   font-size: 24px;
-  margin-top: 260px;
+  margin-left: 2%;
 }
 
 .logo,
@@ -195,13 +181,19 @@ li {
   }
 
   .africa,
-  .asia,
   .europe,
+  .asia,
   .south-america,
   .north-america {
     width: 120px;
-    margin-left: 30px;
-    margin-top: 70px;
+    height: 120px;
+  }
+
+  .globes {
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 8%;
   }
 
   .question {
@@ -209,13 +201,24 @@ li {
   }
 
   .globes-names {
-    margin-left: 60px;
-    font-size: 20px;
-    margin-top: 180px;
+    display: flex;
+  justify-content: space-around;
+  grid-area: footer;
+  margin-top: 22%;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin-left: 2%;
   }
+
+  .globes-background {
+    height: 30vh;
+  }
+
 }
 
-@media screen and (max-width: 770px) {
+
+
+@media screen and (min-width: 561px) and (max-width: 770px) {
   html {
     font-size: 12px;
   }
@@ -269,23 +272,107 @@ li {
   }
 
   .africa,
-  .asia,
   .europe,
+  .asia,
   .south-america,
   .north-america {
-    width: 60%;
-    margin-left: 15%;
-    margin-top: 60%;
-  }
-
-  .africa {
-    margin-left: 20%;
+    width: 100px;
+    height: 100px;
   }
 
   .globes {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 10%;
   }
+  
+  .globes-names {
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 27%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 2%;
+  }
+
+  .globes-background {
+    height: 30vh;
+  }
+}
+
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 40px 2fr 1fr 0.5fr;
+    grid-template-areas:
+      "header header"
+      "photo photo"
+      "thirdphoto otherphoto"
+      "footer footer";
+  }
+
+  .kenya {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .kayaking {
+    grid-area: otherphoto;
+    height: 50vh;
+    width: 66vw;
+  }
+
+  .netherlands {
+    grid-area: thirdphoto;
+    height: 50vh;
+    width: 34vw;
+  }
+
+  .logo {
+    width: 50px;
+    position: absolute;
+    right: 310px;
+    top: 60px;
+  }
+
+  .header {
+    right: 235px;
+    width: 200px;
+    position: absolute;
+    right: 90px;
+    top: 65px;
+  }
+
+  .question {
+    font-size: 20px;
+    margin-top: 3%;
+  }
+
+  .africa,
+  .europe,
+  .asia,
+  .south-america,
+  .north-america {
+    width: 80px;
+    height: 80px;
+  }
+
+  .globes {
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 10%;
+  }
+
+  
   .globes-names {
     margin-left: 7%;
     margin-top: 30%;
@@ -293,6 +380,6 @@ li {
   }
 
   .globes-background {
-    height: 30vh;
+    height: 20vh;
   }
 }
