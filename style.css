@@ -123,17 +123,12 @@ li {
   color: rgb(255, 255, 255);
 }
 
-.africa,
-.europe,
-.asia,
-.south-america,
-.north-america {
+.globes-size {
   width: 180px;
   height: 180px;
 }
 
-
-.globes {
+/*.globes {
   display: flex;
   justify-content: space-around;
   grid-area: footer;
@@ -148,6 +143,13 @@ li {
   color: rgb(255, 255, 255);
   font-size: 24px;
   margin-left: 2%;
+}*/
+
+.globes {
+  grid-area: footer;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .logo,
@@ -180,43 +182,36 @@ li {
     left: 380px;
   }
 
-  .africa,
-  .europe,
-  .asia,
-  .south-america,
-  .north-america {
+  .globes-size {
     width: 130px;
     height: 130px;
   }
 
-  .globes {
+  /*.globes {
     display: flex;
     justify-content: space-around;
     grid-area: footer;
     margin-top: 8%;
   }
+  
+  .globes-names {
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+    margin-top: 22%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 2%;
+  }*/
 
   .question {
     font-size: 20px;
   }
 
-  .globes-names {
-    display: flex;
-  justify-content: space-around;
-  grid-area: footer;
-  margin-top: 22%;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  margin-left: 2%;
-  }
-
   .globes-background {
-    height: 30vh;
+    height: 45vh;
   }
-
 }
-
-
 
 @media screen and (min-width: 561px) and (max-width: 770px) {
   html {
@@ -271,11 +266,7 @@ li {
     margin-top: 3%;
   }
 
-  .africa,
-  .europe,
-  .asia,
-  .south-america,
-  .north-america {
+  .globes-size {
     width: 100px;
     height: 100px;
   }
@@ -286,22 +277,11 @@ li {
     grid-area: footer;
     margin-top: 10%;
   }
-  
-  .globes-names {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 27%;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-left: 2%;
-  }
 
   .globes-background {
-    height: 30vh;
+    height: 35vh;
   }
 }
-
 
 @media screen and (max-width: 560px) {
   html {
@@ -352,27 +332,22 @@ li {
   }
 
   .question {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 3%;
   }
 
-  .africa,
-  .europe,
-  .asia,
-  .south-america,
-  .north-america {
-    width: 10%;
-    height: 25%;
+  .globes-size {
+    width: 60px;
+    height: 60px;
   }
 
-  .globes {
+  /*.globes {
     display: flex;
     justify-content: space-around;
     grid-area: footer;
     margin-top: 10%;
   }
 
-  
   .globes-names {
     display: flex;
     justify-content: space-around;
@@ -381,8 +356,9 @@ li {
     color: rgb(255, 255, 255);
     font-size: 20px;
     margin-left: 2%;
-  }
+  }*/
+
   .globes-background {
-    height: 20vh;
+    height: 25vh;
   }
 }
