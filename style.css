@@ -93,7 +93,7 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   width: 400px;
   position: absolute;
-  right: 250px;
+  right: 240px;
   top: 150px;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -191,7 +191,7 @@ li {
   }
 
   .header {
-    left: 370px;
+    left: 380px;
   }
 
   .africa,
@@ -278,12 +278,11 @@ li {
     margin-top: 60%;
   }
 
-  .africa{
+  .africa {
     margin-left: 20%;
   }
 
-
-  .globes{
+  .globes {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
   }
