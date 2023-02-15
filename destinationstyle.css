@@ -15,24 +15,7 @@ header {
 }
 
 /*this is the code for the arrow (from the Internet)*/
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    -moz-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
+
 @keyframes bounce {
   0%,
   20%,
@@ -47,30 +30,6 @@ header {
     transform: translateY(-30px);
   }
   60% {
-    transform: translateY(-15px);
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-    transform: translateY(0);
-    transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-    transform: translateY(-30px);
-    transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-    transform: translateY(-15px);
     transform: translateY(-15px);
     transform: translateY(-15px);
   }
@@ -93,10 +52,6 @@ header {
   animation: bounce 2s infinite;
 }
 
-.fade {
-  opacity: 0;
-  transition: 1s all ease-out;
-}
 /*it ends here*/
 
 .logo {
