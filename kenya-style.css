@@ -17,6 +17,7 @@ body {
 
 header {
   background-color: black;
+
   grid-area: header;
   width: 100vw;
 }

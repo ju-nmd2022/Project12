@@ -105,16 +105,18 @@ li {
   right: 670px;
   top: 140px;
 }
-.search {
+
+/*.search {
   width: 35px;
   position: absolute;
   right: 10px;
 }
+
 .hamburger {
   width: 60px;
   position: absolute;
   left: 10px;
-}
+}*/
 
 .question {
   grid-area: footer;
