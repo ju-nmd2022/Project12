@@ -106,18 +106,6 @@ li {
   top: 140px;
 }
 
-/*.search {
-  width: 35px;
-  position: absolute;
-  right: 10px;
-}
-
-.hamburger {
-  width: 60px;
-  position: absolute;
-  left: 10px;
-}*/
-
 .question {
   grid-area: footer;
   margin-left: 1.5rem;
@@ -129,23 +117,6 @@ li {
   width: 180px;
   height: 180px;
 }
-
-/*.globes {
-  display: flex;
-  justify-content: space-around;
-  grid-area: footer;
-  margin-top: 7%;
-}
-
-.globes-names {
-  display: flex;
-  justify-content: space-around;
-  grid-area: footer;
-  margin-top: 23%;
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  margin-left: 2%;
-}*/
 
 .globes {
   grid-area: footer;
@@ -185,26 +156,9 @@ li {
   }
 
   .globes-size {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
   }
-
-  /*.globes {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 8%;
-  }
-  
-  .globes-names {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 22%;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-left: 2%;
-  }*/
 
   .question {
     font-size: 20px;
@@ -223,12 +177,11 @@ li {
   body {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 40px 2fr 1fr 0.5fr;
+    grid-template-rows: 40px 2fr 1fr;
     grid-template-areas:
       "header header"
       "photo photo"
-      "thirdphoto otherphoto"
-      "footer footer";
+      "thirdphoto otherphoto";
   }
 
   .kenya {
@@ -263,25 +216,11 @@ li {
     top: 65px;
   }
 
-  .question {
-    font-size: 20px;
-    margin-top: 3%;
-  }
-
+  .question,
+  .globes,
+  .globes-background,
   .globes-size {
-    width: 100px;
-    height: 100px;
-  }
-
-  .globes {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 10%;
-  }
-
-  .globes-background {
-    height: 30vh;
+    display: none;
   }
 }
 
@@ -293,12 +232,11 @@ li {
   body {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 40px 2fr 1fr 0.5fr;
+    grid-template-rows: 40px 2fr 1fr;
     grid-template-areas:
       "header header"
       "photo photo"
-      "thirdphoto otherphoto"
-      "footer footer";
+      "thirdphoto otherphoto";
   }
 
   .kenya {
@@ -333,34 +271,10 @@ li {
     top: 65px;
   }
 
-  .question {
-    font-size: 14px;
-    margin-top: 3%;
-  }
-
+  .question,
+  .globes,
+  .globes-background,
   .globes-size {
-    width: 60px;
-    height: 60px;
-  }
-
-  /*.globes {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 10%;
-  }
-
-  .globes-names {
-    display: flex;
-    justify-content: space-around;
-    grid-area: footer;
-    margin-top: 20%;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-left: 2%;
-  }*/
-
-  .globes-background {
-    height: 25vh;
+    display: none;
   }
 }
