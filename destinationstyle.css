@@ -14,6 +14,16 @@ header {
   width: 100%;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  grid-template-rows: 40px 180rem 10rem;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
+}
+
 /*this is the code for the arrow (from the Internet)*/
 
 @keyframes bounce {
@@ -130,15 +140,6 @@ li {
 
 #menu-toggle {
   display: none;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1fr 15fr 1fr;
-  grid-template-rows: 40px 180rem 10rem;
-  grid-template-areas:
-    "header header header"
-    ". content ."
-    "footer footer footer";
 }
 
 .heading-destinations {
@@ -379,9 +380,13 @@ li {
   height: 176px;
   width: auto;
 }*/
+
+/*
 .line {
   height: 176px;
 }
+*/
+
 /*.l2 {
   height: 176px;
 }
@@ -471,56 +476,56 @@ li {
 }*/
 .images {
   position: absolute;
+  grid-area: content;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 105px;
   padding-top: 100px;
 }
 .headlines {
+  grid-area: content;
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 200px;
   padding-top: 20px;
 }
 
-.kenyainfo {
+.main-info {
   position: absolute;
+  grid-area: content;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 100px;
   font-size: 14px;
-  font-family: sans-serif;
   font-weight: lighter;
-  padding-top: 85px;
+  padding-top: 100px;
   padding-left: 330px;
   width: 300px;
 }
-.kenyainfo2 {
+.additional-info {
+  grid-area: content;
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 100px;
   width: 300px;
   font-size: 14px;
-  font-family: sans-serif;
   font-weight: bold;
   left: 55vw;
 }
 /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
-.line-position {
-  position: relative;
+/*.line1 {
+  position: absolute;
   border-top: 1px solid #000000;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
   width: 90vw;
-  padding-top: 290px;
+  padding-top: 250px;
   display: flex;
   flex-direction: column;
   gap: 290px;
 }
-/*.line2 {
+.line2 {
   position: absolute;
   border-top: 1px solid #000000;
   width: 90vw;
@@ -580,6 +585,7 @@ li {
   width: 90vw;
   margin-top: 2774px;
 }*/
+
 .content {
   grid-area: content;
   background-color: rgb(255, 255, 255);
