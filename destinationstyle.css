@@ -483,6 +483,7 @@ li {
   gap: 100px;
   padding-top: 20px;
 }
+
 .kenyainfo {
   position: absolute;
   display: flex;
@@ -507,13 +508,19 @@ li {
   left: 55vw;
 }
 /*https://www.w3schools.com/howto/howto_css_style_hr.asp*/
-.line1 {
-  position: absolute;
+.line-position {
+  position: relative;
   border-top: 1px solid #000000;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
   width: 90vw;
-  margin-top: 290px;
+  padding-top: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 290px;
 }
-.line2 {
+/*.line2 {
   position: absolute;
   border-top: 1px solid #000000;
   width: 90vw;
@@ -572,7 +579,7 @@ li {
   border-top: 1px solid #000000;
   width: 90vw;
   margin-top: 2774px;
-}
+}*/
 .content {
   grid-area: content;
   background-color: rgb(255, 255, 255);
