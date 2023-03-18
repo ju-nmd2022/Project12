@@ -646,75 +646,60 @@ li {
   }
 }
 @media only screen and (max-width: 1145px) {
-  .kenyainfo2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    width: 300px;
+  .additional-info {
+    gap: 106px;
     font-size: 14px;
-    font-family: sans-serif;
-    font-weight: bold;
     left: 330px;
     top: 200px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .kenyatext {
+  .heading-destinations {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     height: 13px;
-    padding-top: 13px;
+    padding-top: 6px;
   }
-  .kenyainfo {
+  .main-info {
     font-size: 12px;
   }
-  .kenyainfo2 {
+  .additional-info {
     font-size: 12px;
   }
-  .blackboxlink {
+
+  .hoverbox {
+    display: none;
+  }
+  /*.blackboxlink {
     position: absolute;
     width: 60px;
     height: 45px;
     margin-top: 47px;
     opacity: 0%;
-  }
+  }*/
 }
 @media only screen and (max-width: 700px) {
-  .kenyatext {
+  .headlines {
+    gap: 205px;
   }
-  .kenyainfo {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    font-family: sans-serif;
-    font-weight: lighter;
+
+  .main-info {
+    gap: 110px;
     padding-top: 90px;
     padding-left: 50vw;
     width: 250px;
     font-size: 11px;
   }
-  .kenyainfo2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+  .additional-info {
+    gap: 110px;
     width: 250px;
-    font-family: sans-serif;
-    font-weight: bold;
     left: 50vw;
     font-size: 11px;
   }
   .images {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 127px;
-    padding-top: 100px;
+    gap: 110px;
     left: 6vw;
   }
-  .kenyaimg {
+  /*.kenyaimg {
     width: 250px;
     height: auto;
   }
@@ -832,41 +817,37 @@ li {
     margin-top: 2599px;
     height: 157px;
     width: 250px;
-  }
+  }*/
 }
-@media only screen and (max-width: 570px) {
-  .kenyatext {
-  }
-  .kenyainfo {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    font-family: sans-serif;
-    font-weight: lighter;
+@media only screen and (max-width: 650px) {
+  .main-info {
     justify-content: center;
     width: 200px;
+    gap: 86px;
     font-size: 10px;
   }
-  .kenyainfo2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 110px;
+
+  .headlines {
+    gap: 185px;
+  }
+
+  .additional-info {
+    gap: 90px;
     width: 200px;
-    font-family: sans-serif;
-    font-weight: bold;
     margin-right: 13vw;
     top: 26vh;
     font-size: 10px;
   }
   .images {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 157px;
+    gap: 110px;
   }
-  .kenyaimg {
+
+  .destination-image {
+    height: 156px;
+    width: 250px;
+  }
+  /*.kenyaimg {
     width: 200px;
     height: auto;
   }
@@ -984,5 +965,5 @@ li {
     margin-top: 2580px;
     height: 123px;
     width: 200px;
-  }
+  }*/
 }

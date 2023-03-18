@@ -42,7 +42,7 @@ header {
   display: none;
   position: absolute;
   width: 33vw;
-  height: 100vh;
+  height: 98.5vh;
   background-color: rgba(00, 00, 00, 0.9);
   color: white;
   padding: 0.5rem;
@@ -66,7 +66,7 @@ li {
 
 .kenya {
   grid-area: photo;
-  height: 100.5vh;
+  height: 100vh;
   width: 67vw;
 }
 
@@ -155,6 +155,10 @@ li {
     left: 380px;
   }
 
+  .menu-list {
+    width: 66vw;
+  }
+
   .globes-size {
     width: 140px;
     height: 140px;
@@ -182,6 +186,11 @@ li {
       "header header"
       "photo photo"
       "thirdphoto otherphoto";
+  }
+
+  .menu-list {
+    width: 100vw;
+    height: 149vh;
   }
 
   .kenya {
@@ -237,6 +246,11 @@ li {
       "header header"
       "photo photo"
       "thirdphoto otherphoto";
+  }
+
+  .menu-list {
+    width: 100vw;
+    height: 149vh;
   }
 
   .kenya {
