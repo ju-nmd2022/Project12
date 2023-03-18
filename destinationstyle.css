@@ -174,11 +174,10 @@ li {
   margin-bottom: 0.3rem;
   margin-left: 1rem;
 }
-.blackboxlink {
+/*.blackboxlink {
   position: absolute;
-  width: 80px;
+  width: 70px;
   height: 45px;
-  margin-top: 40px;
   opacity: 0%;
 }
 .blackkenya {
@@ -250,16 +249,22 @@ li {
   margin-top: 2585px;
   height: 176px;
   width: 313px;
+}*/
+
+.hoverbox {
+  opacity: 00%;
+  height: 175px;
+  width: 300px;
 }
 
-.blackkenya:hover {
+.hoverbox:hover {
   animation-name: hovercountry;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
-.blackengland:hover {
+/*.blackengland:hover {
   animation-name: hovercountry;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -321,7 +326,7 @@ li {
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-fill-mode: forwards;
-}
+}*/
 @keyframes hovercountry {
   0% {
     opacity: 0%;
@@ -474,7 +479,8 @@ li {
 .choose10 {
   height: 176px;
 }*/
-.images {
+.images,
+.hoverimg-position {
   position: absolute;
   grid-area: content;
   display: flex;
@@ -482,6 +488,7 @@ li {
   gap: 105px;
   padding-top: 100px;
 }
+
 .headlines {
   grid-area: content;
   position: absolute;
